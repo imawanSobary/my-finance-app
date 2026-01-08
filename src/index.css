@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  /* FinanceFlow Theme - Exact Match */
+  /* FinanceFlow Theme - Dark (Default) */
   --color-primary: #06bcf9;
   --color-primary-dark: #05a0d3;
   --color-background: #0f1e23;
@@ -14,6 +14,8 @@
   --color-warning: #fa5f38;
   --color-success: #0bda57;
   --color-sidebar: #111618;
+  --color-input-bg: #1e293b;
+  --color-hover: #27353a;
 
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   line-height: 1.5;
@@ -22,6 +24,35 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Light Theme Overrides */
+[data-theme="light"] {
+  --color-primary: #06bcf9;
+  /* Keep brand color */
+  --color-primary-dark: #05a0d3;
+  --color-background: #f8fafc;
+  /* Light gray background */
+  --color-surface: #ffffff;
+  /* White cards */
+  --color-surface-light: #f1f5f9;
+  /* Lighter gray for secondary elements */
+  --color-surface-lighter: #e2e8f0;
+  /* Even lighter for inputs etc */
+  --color-border: #cbd5e1;
+  /* Light borders */
+  --color-text: #0f172a;
+  /* Dark text */
+  --color-text-muted: #64748b;
+  /* Muted slate text */
+  --color-warning: #ef4444;
+  /* Standard red warning */
+  --color-success: #10b981;
+  /* Standard green success */
+  --color-sidebar: #ffffff;
+  /* White sidebar */
+  --color-input-bg: #f8fafc;
+  --color-hover: #f1f5f9;
 }
 
 * {
