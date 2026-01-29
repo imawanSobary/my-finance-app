@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const Budget = () => {
+function Budget() {
   return (
-    <div>Budget</div>
-  )
+    <div className="bg-slate-900 h-auto w-full px-8 pb-10 gap-6">
+      <h1 className="text-5xl text-slate-400 place-items-center">Budget</h1>
+    </div>
+  );
 }
 
-export default Budget
+export default Budget;
